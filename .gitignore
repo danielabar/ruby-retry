@@ -1,0 +1,24 @@
+# Ignore bundler files
+/.bundle/
+/vendor/
+Gemfile.lock
+
+# Ignore generated directories
+/bin/
+/coverage/
+/doc/
+/log/
+/tmp/
+
+# Ignore editor and IDE files
+*.swp
+*.swo
+*.swn
+.idea/
+
+# Ignore system and OS files
+.DS_Store
+Thumbs.db
+
+# Ignore dependency management files
+Gemfile.local
