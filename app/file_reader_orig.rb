@@ -1,4 +1,4 @@
-class FileReader
+class FileReaderOrig
   MAX_ATTEMPTS = 2
 
   def initialize(file_path)
@@ -10,20 +10,12 @@ class FileReader
     File.read(@file_path)
     puts "File read successful!"
   rescue Errno::ENOENT
-    handle_file_not_found
-  end
-
-  private
-
-  def handle_file_not_found
-    puts "File not found."
-
-    @attempt += 1
-    if @attempt <= MAX_ATTEMPTS
-      puts "Attempt #{@attempt} retrying..."
-      read_with_retry
+    if @attempt < MAX_ATTEMPTS
+      @attempt += 1
+      puts "File not found. Retrying (attempt #{@attempt} of #{MAX_ATTEMPTS})..."
+      retry
     else
-      puts "Max retry attempts of #{MAX_ATTEMPTS} reached."
+      puts "File not found after #{MAX_ATTEMPTS} attempts."
     end
   end
 end
