@@ -6,7 +6,7 @@ class FileReaderOrig
     @attempt = 0
   end
 
-  def read_with_retry
+  def read_file
     File.read(@file_path)
     puts "File read successful!"
   rescue Errno::ENOENT

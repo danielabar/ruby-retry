@@ -13,4 +13,4 @@ end
 #   Dir.glob('./app/*.rb').each { |file| load file }
 # end
 
-puts "FileReader loaded, try it out for example: FileReader.new(\"example.txt\").read_with_retry"
+puts "FileReader loaded, try it out for example: FileReader.new(\"example.txt\").read_file"
