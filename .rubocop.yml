@@ -19,3 +19,6 @@ Style/StringLiterals:
 
 Metrics/MethodLength:
   Max: 15
+
+RSpec/ExampleLength:
+  Max: 15
