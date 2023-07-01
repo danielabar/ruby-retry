@@ -35,8 +35,6 @@ module Retryable
   #
   # rubocop:disable Metrics/MethodLength
   # rubocop:disable Metrics/AbcSize
-  extend self
-
   def with_retries(*args)
     options = args.extract_options!
     exceptions = args
@@ -68,4 +66,6 @@ module Retryable
   end
   # rubocop:enable Metrics/MethodLength
   # rubocop:enable Metrics/AbcSize
+
+  module_function :with_retries
 end
