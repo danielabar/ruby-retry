@@ -1,6 +1,6 @@
 # Ruby Retry
 
-A companion project for a blog post about retry in Ruby. This is a plain Ruby project, not Rails.
+A companion project for a [blog post](https://danielabaron.me/blog/ruby-configurable-retry/) about retry in Ruby. This is a plain Ruby project, not Rails.
 
 ## Setup
 
